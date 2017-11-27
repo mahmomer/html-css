@@ -1,0 +1,183 @@
+/*  project 2 html5 */ 
+*{
+    box-sizing: border-box
+}
+.fixclear { clear: both; }   /* for clear the float both */
+
+body {  background-color: #F9F9F9}
+
+/*start header */
+
+/* 
+.headerr{
+    border: 1px solid #ccc;
+    background-color: azure;
+    margin: 0 10px;
+    height: 500px;
+}
+*/
+/*
+header { 
+    background-image: url(../images/mahmoud_amer.jpg);
+    background-size: cover;
+    width: 35%;
+    float: right;
+    height: 500px;
+    border: 1px solid #ccc; 
+} */ 
+
+nav {  
+    background-image: url(../images/slide1.jpg);
+    background-size: cover;
+    height: 500px;
+    border: 1px solid #ccc;  
+}
+
+nav ul { 
+    list-style: none;
+    text-align: left; 
+    float: left;
+}
+nav ul li:first-child{ margin-left: 0px;}
+nav ul li { 
+    margin-left: 50px;
+    margin-top: 20px;
+    display:inline-block;
+}
+nav ul li a { 
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration:none;
+    color: #4B4B4B
+}
+
+
+nav ul li a:hover{ color:#009}
+nav ul  li.active a { color:#009}
+
+nav input {
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+    float: right;
+    margin: 35px;
+    border: 1px  solid #ccc;
+    border-radius: 10px;
+    background-color:#FFFFFF;
+    color: #238;
+    
+}
+
+
+
+
+
+/*start amin articlae */ 
+/* start about me */ 
+
+.main { 
+    background-color: #FFFFFF;
+    margin: 10px;
+    border: 1px solid #ccc;
+    width: 80%; 
+    float: left; 
+}
+
+.main article { 
+    border: 1px solid #a4a0d8;
+    background-color: #F8F6F6;
+    margin: 10px;
+}
+.main article h3 { 
+    color:#325;
+    font-family: cursive; 
+    font-style: italic;
+    font-weight:600;
+}
+.main article p { 
+    padding-left: 20px;
+    color:#235;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.main article section {  
+    margin-right: 15px; 
+    padding: 15px;
+}
+ 
+.main article .image { 
+    float: left; 
+    width: 40%;
+    padding: 0;
+}
+.main article .image img { width: 100%}
+ 
+.main article section  >div { 
+    width: 31.3%; 
+    float: left; 
+    margin: 10px;
+    height: 280px;
+}
+.main article section  >div img { 
+    width: 100%;
+    border: 1px solid #ccc; 
+    box-shadow: 2px 5px 5px #4B4B8B ;}
+
+.main article  #projects h3{
+    text-align:center;
+    color: #005}
+.main article  details { color: #555 }
+.main article  details summary { 
+    color:#325;
+    font-family: cursive; 
+    font-style: italic;
+    font-weight:600;
+}
+aside { 
+    width: 30%; 
+    float: right; 
+    margin: 10px 0;
+}
+
+footer { height: 500px ;
+    background-color: #494949;
+}
+
+footer section:first-child{margin-left: 180px}
+footer section { 
+    margin-top: 70px;
+    width: 20%;
+    float: left;
+}
+
+footer section ul { list-style: none;}
+footer section ul li { 
+    line-height: 1.8;
+    color:#797D7D;
+    text-transform: capitalize}
+footer section button {
+    margin-left: 37px;
+    background:none; 
+    border:1px solid #797D7D;
+    padding: 7px
+}
+footer section button a {color: #797D7D;text-decoration: none }
+footer section button a:hover{ text-decoration: underline}
+
+footer .iconn  { text-align: center; margin-top: 80px;}
+footer .iconn ul li  { 
+    padding: 10px; 
+    display:inline;
+}
+footer .iconn ul li a  {  
+    color:#797D7D; }
+footer .iconn ul li a:hover { color:#707070}
+
+ footer .iconn span  {
+     margin-top: 20px;
+    text-transform: capitalize;
+    padding: 10px; 
+    color:#797D7D; }
