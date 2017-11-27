@@ -1,0 +1,703 @@
+
+.clearfix { clear: both;}
+
+body { perspective: 1000px}
+
+/* navbar */ 
+
+.container {  width:88%; margin: auto;}
+
+nav {
+    width: 100%;
+    height: 40px;
+    color: #000 ; 
+    padding: 10px;
+    
+}
+
+nav span { 
+    text-transform: uppercase;
+    font-family: 'Averia Gruesa Libre'; 
+    line-height: 40px;
+    font-size: 40px;
+    color: deepskyblue;
+    animation: bf-animation 2s ease-in  1 alternate ;
+}
+ 
+
+nav ul {
+    list-style: none;
+    display: inline;
+    line-height: 20px;
+    float: right;
+    animation: bf-animation 3s ease-in  1 alternate 
+}
+
+
+nav ul li { display: inline; }
+nav ul li a { 
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 30px;
+    padding: 10px;
+
+}
+
+nav ul li a:hover:not(.active) { 
+    border-left: 1px solid deepskyblue ; 
+    color: deepskyblue;
+    
+}
+
+
+nav ul li .active {color: deepskyblue; background-color: #717171;}
+
+
+/* end nav bar * /
+
+
+
+/* start slider 
+
+.slider { 
+    width: 100% ; 
+    height: 500px; 
+    color: #000;
+    background-color: #009999;
+    overflow: hidden;
+}
+*/ 
+
+
+
+.mySlides {display:none;}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1400px;
+  position: relative;
+  margin: auto;
+  height: 500px ;
+    
+}
+.mySlides img { width: 100%; height: 500px }
+
+/* Caption text */
+
+.text-slid {
+  color: #f2f2f2;
+  font-size: 25px;
+  font-family: 'Indie Flower';
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 40%;
+  width: 60%;
+  text-align: center;
+  left: 18%;
+  overflow: hidden;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.mySlides .active {
+  background-color: #717171;
+}
+
+
+/* slide text style */ 
+
+.text-slid h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family:  'Finger Paint';
+    font-size: 45px;
+    font-style: italic;
+    letter-spacing: 6px;
+    color: deepskyblue;
+    text-shadow: 1px 1px 3px #fff;
+    position: relative;
+    animation: bf-animation 3s ease-in  1 alternate ;
+
+}
+
+.text-slid h2:first-letter{ color: rgba(255,0,0,.5); font-size: 80px ;}
+.text-slid p { 
+    font-family:  'Finger Paint';
+    font-size: 22px;
+    margin-top: -15px ;
+    color: #fff;
+    font-style: italic;
+    letter-spacing: 4px;
+    animation: bf-animation 6s ease-in  1 alternate ;
+        
+}
+
+text-sli { 
+    font-family:  'Finger Paint';
+    font-size: 22px;
+    margin-top: -15px ;
+    color: #000 }
+
+
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+
+
+
+
+
+
+/* start about one */ 
+
+
+.section1 {
+    width: 100% ; 
+    height: 300px; 
+    color: #000;
+    background-color:  deepskyblue;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+ .section1 h2 { 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Averia Gruesa Libre';
+    font-size: 35px;
+     color: #fff
+}
+
+.section1 p  { 
+    color: #fff; 
+    padding: 10px;
+    font-family: cursive;
+    font-size: 20px
+    
+}
+
+/*
+.section1 button { 
+    color:deepskyblue;
+    background:#fff; 
+    font-family:'Averia Gruesa Libre';
+    font-size: 22px;
+    border-radius: 10px
+}
+
+.section1 button:hover {
+    color:#fff ;
+    background-color:#cccccc;
+    cursor: pointer;
+}
+*/
+.section1 button { 
+    color:deepskyblue;
+    background:#fff; 
+    font-family:'Averia Gruesa Libre';
+    font-size: 22px;
+    border-radius: 10px;
+    
+}
+
+
+.section1 button:hover {
+    color:#fff ;
+    background-color: deepskyblue;
+    box-shadow: 1.5px 1.5px 5px #fff;
+    cursor: pointer;
+    text-shadow: 1px 1px 5px #fff;
+    transition: all ease-in-out .9s;
+    transform:scale(1.2,1.2)
+  
+}
+
+
+/* start section two */ 
+
+.section2 { margin-top: 80px;}
+.section2, .sec2 ,.sec2 div { position: relative}
+
+ .sec2 div{
+    width: 33.33333% ; 
+    overflow: hidden; 
+    margin: 0px;
+    float: left;
+    border-radius: 5px;
+    
+}
+.section2  .words  { text-align: center ; }
+.sec2 div:not(.words){
+    background-color: #cccccc;
+    margin-top: 20px;
+    color: ;
+    font-family: 
+}
+
+.sec2 .words h2 { 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Averia Gruesa Libre';
+    font-size: 35px;
+}
+
+.sec2 .words p { 
+    font-family: cursive;
+    font-size: 16px;
+    margin-top: -15px 
+} 
+
+.sec2 .line1 ,.line2 { height: 5px; color: black; top: 35px;}
+
+
+
+
+/* start icotext */ 
+
+.ico-text { margin-top: 30px ;}
+.ico-text .ico  div{
+    width: 31.63333% ; 
+    overflow: hidden; 
+    float: left;
+    text-align: left;
+     margin: 10px;
+    
+}
+
+.ico-text .ico  div h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Averia Gruesa Libre';
+    font-size: 25px;
+}
+.ico-text .ico  div p { 
+   
+    font-family: cursive;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 15px 
+    
+} 
+
+/* start pictures part */ 
+
+ .picutures .photo .pic {   }
+
+.picutures { margin-top: 30px ;}
+.photo div{
+    width: 32.444444444444444444444444% ; 
+    overflow: hidden; 
+    margin: 5px;
+    float: left;
+    box-shadow: 2px 2px 5px #000ك
+}
+ .picutures .photo .pic1  {
+     max-height: 450px;
+     transition:  all 1.5s ease;
+     box-shadow:  .5px .5px 5px #000,
+                  -.2px -.2px 10px #000;
+}
+.picutures .photo .pic1:hover{
+    box-shadow:  1px 1px 5px deepskyblue,
+                -1px -1px 5px deepskyblue;
+    transform: scale(.9,.9)
+}
+.picutures .photo .pic1  img { width: 100%; max-height: 250px; }
+
+ .picutures .photo .pic1   p {
+    padding: 10px;
+    font-family: cursive;
+    font-size: 14px
+}
+
+
+
+.picutures .photo .pic1 button { 
+    color:deepskyblue;
+    background:#fff; 
+    font-family:'Averia Gruesa Libre';
+    font-size: 22px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    
+}
+
+
+.picutures .photo .pic1 button:hover {
+    color:#fff ;
+    background-color: deepskyblue;
+    box-shadow: 1.5px 1.5px 5px #fff;
+    cursor: pointer;
+    text-shadow: 1px 1px 5px #fff;
+    transition: all ease-in-out .5s;
+    transform:scalex(1.1)
+  
+}
+/* start afte-blog  
+.aft-blog ,.a-blog div,.a-b { position: relative; border-radius: 10px}
+.aft-blog { margin-top: 30px ; background-color: #009999; }
+.a-blog div { background: #f98; width: 32.3%; float: left ;  margin: 5px}
+.a-b{ height: 8px; top: 20px}
+
+*/
+
+
+
+
+
+
+/* start blog */ 
+.blog { 
+    margin-top: 50px ;
+    overflow: hidden
+}
+.blog .blo > div {
+    float: left;
+    overflow: hidden ; 
+}
+/* start left */ 
+
+.left {width:75% ; }
+
+.img-text {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px; 
+}
+
+.img-text .image,.text { float: left; }
+.img-text .image {
+    height: 315px;
+    width: 30%;
+    transition:  all 1.5s ease;
+    box-shadow:  .5px .5px 5px #000,
+                 -.2px -.2px 10px #000;
+}
+
+.img-text .image:hover{
+    box-shadow:  1px 1px 5px deepskyblue,
+                -1px -1px 5px deepskyblue;
+    transform: scale(.9,.9)
+}
+
+
+
+.img-text .image img { width: 100%; height: 315px; }
+.img-text .text { width:65%; padding: 15px;color:  black }
+.img-text .text h2,p { color: black; }
+
+.img-text .text h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Averia Gruesa Libre';
+    font-size: 20px;
+     }
+
+
+.img-text .text p  { 
+    margin-top: -28px
+    padding: 10px;
+    font-family: cursive;
+    font-size: 14px;
+    text-align: justify
+    
+}
+
+.img-text  button { 
+    margin-left: 25px;
+    color:deepskyblue;
+    background:#fff; 
+    font-family:'Averia Gruesa Libre';
+    font-size: 22px;
+    border-radius: 10px;
+    
+}
+
+
+ .img-text button:hover {
+    color:#fff ;
+    background-color: deepskyblue;
+    box-shadow: 1.5px 1.5px 5px deepskyblue;
+    cursor: pointer;
+    text-shadow: 1px 1px 5px #fff;
+    transform:scale(1.3,1.3)
+  
+}
+
+/* start right */ 
+.blog .right { width: 23%; margin-left: 5px }
+
+.blo-right {
+    height:260px;
+    margin-bottom: 20px ;
+    overflow: hidden;
+    transition:  all 1.5s ease;
+    box-shadow:  .5px .5px 5px #000,
+                 -.2px -.2px 10px #000;
+}
+
+.blo-right:hover{
+    box-shadow:  1px 1px 5px deepskyblue,
+                -1px -1px 5px deepskyblue;
+    transform: scale(.9,.9)}
+
+
+
+.blo-right img {
+    width: 100% ;
+    height:150px
+}
+
+
+
+
+
+.blo-right  h2 { 
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Averia Gruesa Libre';
+    font-size: 15px;
+     }
+
+
+
+
+.blo-right  p  { 
+    
+    margin-top: -28px;
+    padding: 10px;
+    font-family: cursive;
+    font-size: 10px;
+    
+}
+
+
+/* start before footer */ 
+.bf-foot { height: 400px; background:deepskyblue}
+
+.bf-fotr > div  { 
+    float: left; 
+    width: 21% ; 
+    height: 300px;
+    word-wrap: break-word ;
+    text-align: left; 
+    padding: 22px;
+    color: #fff;
+    transition: all 1s ease-out ;
+    animation: bf-animation 2s ease-in  1 alternate 
+}
+
+
+.bf-fotr ul li { list-style: none;line-height: 40px}
+ 
+.bf-fotr ul li a{ text-decoration: none; color:#fff; }
+.bf-fotr ul li a:hover { color: black}
+.bf-fotr  h2 { 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Averia Gruesa Libre';
+    font-size: 15px;
+    text-shadow: 2px 2px 5px #fff;
+     }
+
+
+ .bf-fotr p  {
+    color: #fff;
+    padding: 10px;
+    font-family: cursive;
+    font-size: 14px;
+    text-align: justify;
+    text-shadow: 2px 2px 5px #fff;
+        
+    
+}
+
+.bf-fotr div input { 
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.bf-fotr div input[type="submit"]{ 
+    color:deepskyblue;
+    background:#fff; 
+    font-family:'Averia Gruesa Libre';
+    font-size: 22px
+
+}
+
+.bf-fotr div input:hover[type="submit"]{ 
+    color:#fff ;
+    background-color:rgba(20,34,8,.2);
+    cursor: pointer;
+    text-shadow: 2px 2px 5px #fff;
+    box-shadow:  3px 3px 10px #fff;
+    
+}
+
+.bf-fotr .social {line-height: 30px }
+
+
+@keyframes  bf-animation{ 
+    from { opacity: 0}
+    to { opacity: 1}
+}
+
+
+
+/*start footer */ 
+
+footer  { background: #333333;height: 50px; color: aliceblue;line-height: 50px;text-align: center}
+
+.icons { margin-top: 10px   }
+.icons i { 
+    padding: 8px ;
+    color: #fff;
+}
+
+.icons i:hover { 
+     color:  dodgerblue;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* font for slider text  */ 
+/* latin */
+@font-face {
+  font-family: 'Finger Paint';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Finger Paint Regular'), local('FingerPaint-Regular'), url(https://fonts.gstatic.com/s/fingerpaint/v7/m_ZRbiY-aPb13R3DWPBGX-gdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+/* font for h2 , h3 , span */ 
+
+@font-face {
+  font-family: 'Averia Gruesa Libre';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Averia Gruesa Libre Regular'), local('AveriaGruesaLibre-Regular'), url(https://fonts.gstatic.com/s/averiagruesalibre/v6/10vbZTOoN6T8D-nvDzwRF4JWVBtBpC2aP0cdwi-lS9I.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+
+
+
+
+
+/* start travel page */ 
+
+.travels {
+    height: 500px ;
+    background-color:rgba(70,71,255,.9);
+    position: relative;
+    color: aliceblue
+}
+
+
+
+.travel {
+    width: 250px;
+    height: 150px;
+    position: relative; 
+    top:35%;
+    left: 42%;
+    animation: bf-animation 1.5s ease-in  1 alternate 
+
+}
+
+
+
+
+
+
+/* CONTact page */ 
+
+
+#map { 
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color:rgba(70,71,255,.9);
+    width:1200px;
+    height:900px;
+}
+
+
